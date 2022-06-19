@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BasketBall-ScoreCard-Scrimba-SoloProject</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="main-title">BASKETBALL SCORECARD</h1>
+    <div class="container">
+      <div class="home-container">
+        <h3 class="title">HOME</h3>
+        <div class="black-box">
+          <span class="score" id="home-points">0</span>
+        </div>
+        <div class="btn-container">
+          <button onclick="incrementByOne()" class="btn">+1</button>
+          <button onclick="incrementByTwo()" class="btn">+2</button>
+          <button onclick="incrementByThree()" class="btn">+3</button>
+        </div>
+      </div>
+      <div class="home-container">
+        <h3 class="title">GUEST</h3>
+        <div class="black-box">
+          <span id="guest-points" class="score">0</span>
+        </div>
+        <div class="btn-container">
+          <button onclick="incrementGuestByOne()" class="btn">+1</button>
+          <button onclick="incrementGuestByTwo()" class="btn">+2</button>
+          <button onclick="incrementGuestByThree()" class="btn">+3</button>
+          <button onclick="resetAll()" class="btn reset-btn" type="reset">
+            RESET
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
